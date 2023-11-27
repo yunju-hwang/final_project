@@ -77,12 +77,6 @@
       "title": "Product 1",
       "price": "10000",
       "image": " https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
-    },
-    {
-      "id": 2,
-      "title": "Product 2",
-      "price": "20000",
-      "image": " https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
     }
   ]
 }
