@@ -1,6 +1,6 @@
 import { createNavbar } from '../Component/Navbar.js';
       
-        document.addEventListener('DOMContentLoaded', createNavbar);
+document.addEventListener('DOMContentLoaded', createNavbar);
 
 
 async function fetchProducts() {
@@ -15,8 +15,7 @@ async function fetchProducts() {
       const card = document.createElement('div');
       card.className = 'product-card';
 
-      const container = document.createElement('div');
-      container.className = 'container'
+     
   
       const img = document.createElement('img');
       img.src = product.image;
@@ -29,9 +28,14 @@ async function fetchProducts() {
       const price = document.createElement('p');
       price.textContent = product.price;
       card.appendChild(price);
+
+      card.addEventListener('click', () => {
+        // Product.html 페이지로 이동
+        window.location.href = `./Product.html?id=${product.id}`;
+      });
   
       productList.appendChild(card);
-      productList.appendChild(container);
+   
     });
   }
   
