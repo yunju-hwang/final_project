@@ -35,95 +35,23 @@
       "smsAcceptance": "true",
       "emailAcceptance": "true",
       "id": 3
+    }
+  
+    
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "price": "10000",
+      "image": "image1.jpg"
     },
     {
-      "name": "황윤주",
-      "email": "duswldbswn@nate.com",
-      "password": "77777777",
-      "phoneNumber": "01011111111",
-      "birthDate": "19991225",
-      "gender": "남",
-      "address": "부산",
-      "smsAcceptance": "true",
-      "emailAcceptance": "true",
-      "id": 4
-    },
-    {
-      "name": "황윤주",
-      "email": "duswldbswn@google.com",
-      "password": "88888888",
-      "phoneNumber": "01011111111",
-      "birthDate": "19991225",
-      "gender": "남",
-      "address": "부산",
-      "smsAcceptance": "true",
-      "emailAcceptance": "true",
-      "id": 5
-    },
-    {
-      "name": "황윤주",
-      "email": "duswldbswn@google.com",
-      "password": "99999999",
-      "phoneNumber": "01000000000",
-      "birthDate": "19991225",
-      "gender": "남",
-      "address": "부산",
-      "smsAcceptance": "true",
-      "emailAcceptance": "true",
-      "id": 6
-    },
-    {
-      "name": "황윤주",
-      "email": "duswldbswn@kakao.com",
-      "password": "99999999",
-      "phoneNumber": "01011111111",
-      "birthDate": "19991225",
-      "gender": "남",
-      "address": "부산",
-      "smsAcceptance": "true",
-      "emailAcceptance": "true",
-      "id": 7
-    },
-    {
-      "name": "test",
-      "email": "duswldbswn@hanmail.net",
-      "password": "11111111",
-      "phoneNumber": "01011111111",
-      "birthDate": "888888",
-      "gender": "남",
-      "address": "qntks",
-      "smsAcceptance": "true",
-      "emailAcceptance": "true",
-      "id": 8
-    },
-    {
-      "name": "황윤주",
-      "email": "duswldbswn@naver.com",
-      "password": "88888888",
-      "phoneNumber": "01011111111",
-      "birthDate": "19991225",
-      "gender": "남",
-      "address": "부산",
-      "smsAcceptance": "true",
-      "emailAcceptance": "true",
-      "id": 9
-    },
-    {
-      "name": "황윤주",
-      "email": "duswldbswn@naver.com",
-      "password": "88888888",
-      "phoneNumber": "01011111111",
-      "birthDate": "19991225",
-      "gender": "남",
-      "address": "qntks",
-      "smsAcceptance": "true",
-      "emailAcceptance": "true",
-      "id": 10
-    },
-    {
-      "email": "duswldbswn@naver.com",
-      "password": "123456789",
-      "id": 11
+      "id": 2,
+      "title": "Product 2",
+      "price": "20000",
+      "image": "image2.jpg"
     }
   ]
 }
