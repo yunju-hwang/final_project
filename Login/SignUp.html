@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-  
+  <head>
+    <meta charset="UTF-8" />
+
     <title>SignUp</title>
-</head>
-<body>
-    <h1>SignUp</h1>
-</body>
+    <link rel="stylesheet" href="./SignUp.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Sign Up</header>
+      <form method="post" class="form">
+        <div class="input-box">
+          <label>이름</label>
+          <input type="text" required placeholder="이름을 입력해주세요" />
+        </div>
+
+        <div class="input-box">
+          <p>이메일</p>
+          <div class="column">
+            <input type="text" required />@
+            <input class="box" id="domain-txt" type="text" />
+            <select class="box" id="domain-list">
+              <option value="type">직접 입력</option>
+              <option value="naver.com">naver.com</option>
+              <option value="google.com">google.com</option>
+              <option value="hanmail.net">hanmail.net</option>
+              <option value="nate.com">nate.com</option>
+              <option value="kakao.com">kakao.com</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label>비밀번호</label>
+          <input type="password" id="password1" required placeholder="비밀번호를 입력해주세요" />
+        </div>
+
+        <div class="input-box">
+          <label>비밀번호 확인</label>
+          <input type="password" id="password2" required placeholder="비밀번호를 다시 한번 입력해주세요" />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>연락처</label>
+            <input type="text" required placeholder="- 없이 숫자만 입력해주세요" />
+          </div>
+          <div class="input-box">
+            <label>생년월일</label>
+            <input type="text" required placeholder="- 없이 숫자만 입력해주세요" />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3>성별</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">남</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" checked />
+              <label for="check-female">여</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label>주소</label>
+          <input type="text" required />
+        </div>
+
+        <div class="gender-box">
+            <h3>SMS 수신동의</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-sms-yes" name="sms" checked />
+                <label for="check-sms-yes">허용</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-sms-no" name="sms"  />
+                <label for="check-sms-no">거부</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="gender-box">
+            <h3>Email 수신동의</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-email-yes" name="email" checked />
+                <label for="check-email-yes">허용</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-email-no" name="email"  />
+                <label for="check-email-no">거부</label>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" onclick="test()" value="회원가입">
+
+
+      </form>
+
+
+    </section>
+
+
+    <script src="./SignUp.js"></script>
+  </body>
 </html>
