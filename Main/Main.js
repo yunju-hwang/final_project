@@ -14,6 +14,9 @@ async function fetchProducts() {
     products.forEach(product => {
       const card = document.createElement('div');
       card.className = 'product-card';
+
+      const container = document.createElement('div');
+      container.className = 'container'
   
       const img = document.createElement('img');
       img.src = product.image;
@@ -28,6 +31,7 @@ async function fetchProducts() {
       card.appendChild(price);
   
       productList.appendChild(card);
+      productList.appendChild(container);
     });
   }
   

@@ -1,3 +1,14 @@
+#product-list {
+  display: flex;
+  justify-content: row;
+  gap: 16px;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .product-card {
   display: flex;
   flex-direction: column;

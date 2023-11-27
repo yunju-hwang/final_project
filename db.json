@@ -52,6 +52,18 @@
       "title": "Product 2",
       "price": "20000",
       "image": "image2.jpg"
-    }
+    },
+    {
+        "id": 2,
+        "title": "Product 2",
+        "price": "20000",
+        "image": "image2.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Product 2",
+        "price": "20000",
+        "image": "image2.jpg"
+      }
   ]
 }
