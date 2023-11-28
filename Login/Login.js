@@ -1,4 +1,5 @@
 import { createNavbar } from '../Component/Navbar.js';
+document.addEventListener('DOMContentLoaded', createNavbar);
 
 let isLoggedIn = false;
 
@@ -22,7 +23,7 @@ async function login(email, password) {
     localStorage.setItem('accessToken', accessToken);
     localStorage.setItem('refreshToken', refreshToken);
     localStorage.setItem('accessTokenExpiresIn', accessTokenExpiresIn);
-    // 로그인 상태를 true로 변경하고 Navbar를 업데이트
+    //로그인 상태를 true로 변경하고 Navbar를 업데이트
     isLoggedIn = true;
     createNavbar(isLoggedIn);
     window.location.href = '../Main/Main.html';
@@ -36,3 +37,4 @@ async function login(email, password) {
     login(usernameInput.value, passwordInput.value);
   });
   
+

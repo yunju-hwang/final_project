@@ -35,6 +35,31 @@
       "smsAcceptance": "true",
       "emailAcceptance": "true",
       "id": 3
+    },
+    {
+      "email": "duswldbswn@naver.com",
+      "password": "123456789",
+      "id": 4
+    },
+    {
+      "email": "duswldbswn@naver.com",
+      "password": "123456789",
+      "id": 5
+    },
+    {
+      "email": "duswldbswn@naver.com",
+      "password": "123456789",
+      "id": 6
+    },
+    {
+      "email": "duswldbswn@naver.com",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "email": "duswldbswn@naver.com",
+      "password": "11111111",
+      "id": 8
     }
   ],
   "products": [
@@ -65,9 +90,9 @@
   ],
   "cart": [
     {
-      "id": 1,
-      "title": "Product 1",
-      "price": "10000",
+      "id": 2,
+      "title": "Product 2",
+      "price": "20000",
       "image": " https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
     }
   ],
