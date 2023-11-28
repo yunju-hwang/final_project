@@ -1,8 +1,7 @@
-let isLoggedIn = false;
-
-
-
-export function createNavbar() {
+export function createNavbar({ isLoggedIn }) {
+    //test용 
+  isLoggedIn = true;
+  //test
   const navbarElement = document.getElementById("navbar");
   const navLinks = [
     { title: "Shop", url: "../Main/Main.html" },

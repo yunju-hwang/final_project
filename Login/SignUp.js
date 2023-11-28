@@ -1,3 +1,7 @@
+import { createNavbar } from '../Component/Navbar.js';
+      
+document.addEventListener('DOMContentLoaded', createNavbar);
+
 //email 직접 입력 칸 구현
 const domainListEl = document.querySelector("#domain-list");
 const domainInputEl = document.querySelector("#domain-txt");
@@ -14,8 +18,11 @@ domainListEl.addEventListener("change", (event) => {
   }
 });
 
-function test() {
-  //비밀번호 확인
+const form = document.querySelector('.form');
+
+form.addEventListener('submit', function(event){
+    event.preventDefault();
+    //비밀번호 확인
   var p1 = document.getElementById("password1").value;
   var p2 = document.getElementById("password2").value;
 
@@ -61,8 +68,8 @@ function test() {
   }
 
   //post
-  const url = "http://localhost:3000"
-  fetch(`${url}/users`, {
+
+  fetch(`http://localhost:3000/users`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -81,4 +88,4 @@ function test() {
         .catch((error) => {
           console.error('Error:', error);
         });
-}
+})
