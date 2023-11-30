@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', createNavbar);
 
 
 async function fetchProducts() {
-    const response = await fetch('http://localhost:3000/products');
+    const response = await fetch('http://localhost:8080/api/product/list');
     const products = await response.json();
   
    

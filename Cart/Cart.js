@@ -16,7 +16,7 @@ window.onload = async function () {
 };
 
 async function getCart() {
-  const response = await fetch("http://localhost:3000/cart");
+  const response = await fetch("http://localhost:8080/api/cart/");
   return await response.json();
 }
 
@@ -49,7 +49,7 @@ function createProductRow(product) {
 }
 
 async function deleteProduct(product, row) {
-  const response = await fetch(`http://localhost:3000/cart/${product.id}`, {
+  const response = await fetch(`http://localhost:8080/cart/?productId=${product.id}`, {
     method: "DELETE",
   });
 

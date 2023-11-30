@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', createNavbar);
 
 
 window.onload = function() {
-    fetch('http://localhost:3000/posts')
+    fetch('http://localhost:8080/api/notice/list')
       .then(response => response.json())
       .then(posts => {
         const tableBody = document.querySelector('tbody');

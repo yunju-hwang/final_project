@@ -13,7 +13,7 @@ window.onload = async function() {
 };
 
 async function getWishlist() {
-    const response = await fetch('http://localhost:3000/wishlist');
+    const response = await fetch('http://localhost:8080/wishlist/');
     return await response.json();
 }
 
@@ -42,7 +42,7 @@ function createProductElement(product) {
 }
 
 async function deleteProduct(product, element) {
-    const response = await fetch(`http://localhost:3000/wishlist/${product.id}`, {
+    const response = await fetch(`http://localhost:8080/api//wishlist/?productId=${product.id}`, {
         method: 'DELETE'
     });
 

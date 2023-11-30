@@ -187,6 +187,12 @@
       "title": "Product 2",
       "price": "20000",
       "image": " https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
+    },
+    {
+      "id": 4,
+      "title": "Product 2",
+      "price": "20000",
+      "image": " https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
     }
   ],
   "posts": [
@@ -204,6 +210,21 @@
       "views": 120,
       "date": "2023-12-02"
     }
+  ],
+  "inquiry": [
+    {
+      "id": 1,
+      "title": "첫 번째 문의사항",
+      "content": "첫 번째 문의사항 내용입니다.",
+      "views": 100,
+      "date": "2023-12-01"
+    },
+    {
+      "id": 2,
+      "title": "두 번째 문의사항",
+      "content": "두 번째 문의사항 내용입니다.",
+      "views": 120,
+      "date": "2023-12-02"
+    }
   ]
-  
 }

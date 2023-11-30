@@ -6,7 +6,7 @@ window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const postId = Number(urlParams.get('id')); // postId를 숫자로 변환합니다.
 
-    fetch(`http://localhost:3000/posts/${postId}`)
+    fetch(`http://localhost:8080/api/notice/detail?noticedId=${postId}`)
         .then(response => response.json())
         .then(post => {
             document.getElementById('post-title').textContent = post.title;

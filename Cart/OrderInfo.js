@@ -14,7 +14,7 @@ window.onload = async function() {
 };
 
 async function getAddresses() {
-    const response = await fetch('http://localhost:3000/users');
+    const response = await fetch('http://localhost:8080/auth/signup');
     return await response.json();
 }
 
