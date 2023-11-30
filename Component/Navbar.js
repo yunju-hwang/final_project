@@ -1,6 +1,6 @@
 export function createNavbar({ isLoggedIn }) {
     //test용 
-  isLoggedIn = true;
+  isLoggedIn = false;
   //test
   const navbarElement = document.getElementById("navbar");
   const navLinks = [
